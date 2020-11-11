@@ -1,0 +1,11 @@
+<%=simple_form_for @restaurant do |f| %>
+
+ <ul>
+   <li><%= f.input :name %></li>
+   <li><%= f.select :category, ["chinese", "italian", "japanese", "french", "belgian"]%></li>
+   <li><%= f.input :address %></li>
+   <li><%= f.input :phone_number %></li>
+   <li><%= f.submit %></li>
+  </ul>
+
+<% end %>
